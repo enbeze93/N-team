@@ -85,6 +85,10 @@ Itt lesz arra lehetőség, hogy gombnyomásra összesítést lássunk az egyes h
 A tervezés során valamennyi követelményre terveztünk használati esetete.
 ## 8. Képernyő tervek
 
+![alt text](https://i.ibb.co/G3DjNmh/oktatoi-fooldal.png "Oktató oldal")
+![alt text](https://i.ibb.co/LJkjBSc/kurzus-oldal.png "Kurzus oldal")
+![alt text](https://i.ibb.co/z2MJkHr/jegyhozzadas.png "Jegybeírás oldal")
+
 ## 9. Forgatókönyv
 Az oktatók a rendszerbe lépve a félév során oktatott kurzusaikat látják (tárgynév, tárgykód, kurzuskód, létszám), melyre kattintva a kurzus hallgatóinak névsora és a konzultációs alkalmak időpontja jelenik meg (táblázatos formában), ahol az oktató tudja rögzíteni a jelenlétet/hiányzást.
 
