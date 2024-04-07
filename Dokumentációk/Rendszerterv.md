@@ -22,13 +22,13 @@ Az rendszer célja, hogy segítse az oktató kollégák adminisztratív munkáj�
 
 ## 6. Fizikai környezet
 
-## 7. Absztrakt domain modell ● 
+## 7. Absztrakt domain modell
 
 ## 8. Architekturális terv 
 
 ## 9. Adatbázis terv
 
-## 10. Implementációs terv ●
+## 10. Implementációs terv
 
 ## 11. Tesztterv
 
