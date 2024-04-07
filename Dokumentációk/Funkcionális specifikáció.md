@@ -92,3 +92,7 @@ Itt lesz arra lehetőség, hogy gombnyomásra összesítést lássunk az egyes h
 
 Továbbá, szintén gombnyomásra, lehetőség van újabb táblázat lekérésére, ahová nem hiányzásokat, hanem érdemjegyeket tud rögzíteni az oktató, tetszőleges számban. A rendszernek tudnia kell az érdemjegyeket átlagolni, ajánlott féléves osztályzatot számolni.
 ## 10. Funkció - követelmény megfeleltetés
+
+## 11. Fogalomtár
+1. **Admin**
+   - Olyan felhasználó, aki a rendszer minden eleméhez és funkciójához hozzáfér és módosítani tudja azokat, ha szükséges.

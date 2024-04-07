@@ -97,3 +97,6 @@ Annak érdekében, hogy az oktatók egységesen, és időt megtakarítva tudják
 | Felület     | K9  | Féléves eremény számítás | 1.0 | A rendszer súlyozott számtani átlagot számol, és ajánlott féléves érdemjegyként feltünteti a hallgatónál.                                                                                                       |
 | Statisztika | K10 | Összegzés                | 1.0 | Az oktató megtekintheti a kurzusonként, illetve összes kurzusa vonatkozásában az összesített értékeket (hiányzások, eredmények)                                                                                 |
 | Felület     | K11 | Bejelentkezés            | 1.0 | A felhasználók itt tudnak bejelentkezni a rendszerbe, probléma esetén jelszót, változtatni.                                                                                                                     |
+## 9. Fogalomtár
+1. **Admin**
+   - Olyan felhasználó, aki a rendszer minden eleméhez és funkciójához hozzáfér és módosítani tudja azokat, ha szükséges.

@@ -11,10 +11,10 @@ Az rendszer célja, hogy segítse az oktató kollégák adminisztratív munkáj�
 3. **Dokumentáció elkészítése:**
    - Farkas Attila
 4. **Ütemterv:**
-   - A mellékelt excel szerint.
+   - [A mellékelt excel szerint.](https://github.com/enbeze93/N-team/blob/main/Dokument%C3%A1ci%C3%B3k/GanttAFP2.xlsx)
+
 
 ## 3. Üzleti folyamatok modellje
-
 
 ## 4. Követelmények
 
