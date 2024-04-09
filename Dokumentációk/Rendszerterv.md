@@ -18,6 +18,7 @@ Az rendszer célja, hogy segítse az oktató kollégák adminisztratív munkáj�
 Ide fogok berakni képet!
 
 ## 4. Követelmények
+Átmásolom majd a követelményspeből!
 
 ## 5. Funkcionális terv
 
