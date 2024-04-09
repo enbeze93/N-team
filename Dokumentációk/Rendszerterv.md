@@ -15,6 +15,7 @@ Az rendszer célja, hogy segítse az oktató kollégák adminisztratív munkáj�
 
 
 ## 3. Üzleti folyamatok modellje
+Ide fogok berakni képet!
 
 ## 4. Követelmények
 
