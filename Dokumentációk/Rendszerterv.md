@@ -33,6 +33,7 @@ Ide fogok berakni képet!
 ## 10. Implementációs terv
 
 ## 11. Tesztterv
+- Cypress segítségével...
 
 ## 12. Telepítési terv
 
