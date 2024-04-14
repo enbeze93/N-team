@@ -22,6 +22,16 @@ Ide fogok berakni képet!
 
 ## 5. Funkcionális terv
 
+1. **Kurzusok kezelése oldal**
+- Az oktató látja a kurzusait, a hallgatókat és a kurzus kódját
+- Lekérheti a hallgatók névsorát adott kurzushoz
+- Összesített kurzus statiszta lekérésének a lehetősége (hiányzás, átlag)
+
+2. **Kiválasztott kurzus oldal**
+- Az oktató bejegyezheti, ha egy diák hiányzott az adott alkalomról
+- Óránként beírhat jegyet a diákoknak
+- Átlagot számíttathat
+- Bizonyos érték felett jelzést kap, ha egy diák elérte a maximum hiányzást
 ## 6. Fizikai környezet
 
 ## 7. Absztrakt domain modell
