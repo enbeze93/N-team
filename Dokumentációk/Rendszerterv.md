@@ -39,7 +39,38 @@ Ide fogok berakni képet!
 ## 8. Architekturális terv 
 
 ## 9. Adatbázis terv
-
+1. **Felhasználók Tábla**
+- Cél: Felhasználói hitelesítő adatok tárolása.
+Attribútumok:
+- **Attribútumok**
+   -   NeptunKod (Primer kulcs): A felhasználó egyedi azonosítója.
+   -   Jelszo: Titkosított formában tárolt jelszó.
+2. **Kurzusok Tábla**
+- Cél: Az elérhető kurzusok információjának tárolása.
+- **Attribútumok**
+   -   KurzusID (Primer kulcs): A kurzus egyedi azonosítója.
+   -   KurzusNev: A kurzus neve.
+   -   OktatoNeptunKod: Az oktató Neptun kódja, aki a kurzust tartja (Idegen kulcs, kapcsolódik a Felhasználók táblához).
+3. **KurzusHallgatók Tábla**
+- Cél: A kurzusokhoz rendelt hallgatók nyilvántartása.
+- **Attribútumok**
+   -   KurzusID (Idegen kulcs, kapcsolódik a Kurzusok táblához): A kurzus azonosítója, amelyhez a hallgató tartozik.
+   -   HallgatoNeptunKod (Idegen kulcs, kapcsolódik a Felhasználók táblához): A hallgató Neptun kódja.
+3. **Jegyek Tábla**
+- Cél: Az oktató által beírt jegyek tárolása a hallgatók számára.
+Jegy: A hallgató által elérhető érdemjegy (pl. 1-től 5-ig).
+- **Attribútumok**
+   -   JegyID (Primer kulcs): A jegy egyedi azonosítója.
+   -   HallgatoNeptunKod (Idegen kulcs, kapcsolódik a Felhasználók táblához): A hallgató Neptun kódja.
+   -   KurzusID (Idegen kulcs, kapcsolódik a Kurzusok táblához): A kurzus azonosítója, amelyben a jegyet rögzítik.
+   -   Jegy: A hallgató által elérhető érdemjegy (pl. 1-től 5-ig).
+4. **Hiányzások Tábla**
+- Cél: A hallgatók hiányzásainak nyilvántartása.
+- **Attribútumok**
+   -   HianyzasID (Primer kulcs): A hiányzás egyedi azonosítója.
+   -   HallgatoNeptunKod (Idegen kulcs, kapcsolódik a Felhasználók táblához): A hiányzó hallgató Neptun kódja.
+   -   KurzusID (Idegen kulcs, kapcsolódik a Kurzusok táblához): A kurzus azonosítója, ahonnan hiányzott.
+   -   Datum: A hiányzás dátuma.
 ## 10. Implementációs terv
 
 ## 11. Tesztterv
