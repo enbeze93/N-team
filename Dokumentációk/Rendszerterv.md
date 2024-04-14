@@ -33,7 +33,26 @@ Ide fogok berakni képet!
 ## 10. Implementációs terv
 
 ## 11. Tesztterv
-- Cypress segítségével...
+1. **Tesztelési Stratégia**
+- Cél: Meghatározni a tesztelés céljait, amely magában foglalja a funkciók ellenőrzését, a felhasználói felület tesztelését, és a rendszer biztonságos működését.
+- Módszertan: Kombinálja a manuális tesztelési technikákat az automatizált tesztekkel a széles körű lefedettség érdekében.
+2. **Tesztelési Szintek**
+- Egységteszt: Kisebb kódrészletek (funkciók, metódusok) tesztelése, hogy azok a specifikáció szerint működnek-e.
+- Integrációs teszt: A rendszer különböző részeinek együttműködésének tesztelése, hogy az integrációk helyesek-e.
+- Rendszerteszt: Az egész rendszer tesztelése, hogy az megfelel-e a követelményeknek és a felhasználói elvárásoknak.
+- Elfogadási teszt: Az ügyfél vagy a végfelhasználók által végzett tesztek, hogy a rendszer készen áll-e a termelésbe helyezésre.
+3. **Automatizált Tesztelési Eszközök**
+- Cypress: A webes felület automatizált tesztelésére használt eszköz.
+Tesztelési forgatókönyvek fejlesztése a felhasználói interakciók szimulálására.
+Tesztek automatizálása a felhasználói felület működésének, funkcióinak és reakcióidejének ellenőrzésére.
+4. **Tesztesetek és Forgatókönyvek**
+- Felsorolás: A tesztesetek és forgatókönyvek felsorolása, amelyek lefedik a rendszer összes funkcióját.
+
+- **Példák a tesztesetekre:**
+   -   A felhasználó bejelentkezhet a rendszerbe helyes felhasználónévvel és jelszóval.
+   -   Az oktató képes átlagot számíttatni.
+
+
 
 ## 12. Telepítési terv
 
