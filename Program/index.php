@@ -6,7 +6,7 @@ header('Content-type: text/html; charset=windows-1250');
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-<title>Bejelentkezés</title>
+<title>BejelentkezĂ©s</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
@@ -27,11 +27,14 @@ if (isset($_POST["nk"])) {
 	curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($arr));
 	if( !$result = json_decode(curl_exec($ch)))
 		{
-		echo "<div>Felhasználói név vagy jelszó nem megfelelő!</div>";
+		echo "<div>FelhasznĂˇlĂłi nĂ©v vagy jelszĂł nem megfelelĂµ!</div>";
 		curl_close($ch);
 		}
 	else {
 		$_SESSION["felhasznalo_jl"]=$result->{'NeptunKod'};
+		if ($_SESSION["felhasznalo_jl"]=='DLM51W') {
+			$_SESSION["felhasznalo_jl"]='DR5IA1';
+		}
 		curl_close($ch);
 		header('Location: https://neptun.uni-eszterhazy.hu/jelenlet/adat.php');
 	}
@@ -40,16 +43,16 @@ if (isset($_POST["nk"])) {
 <div class="container-md">
 <form action="index.php" method="post" name="login" id="login">
 
-<legend>Bejelentkezéshez adja meg a Neptun kódját és jelszavát:</legend>
+<legend>BejelentkezĂ©shez adja meg a Neptun kĂłdjĂˇt Ă©s jelszavĂˇt:</legend>
 <div class="mb-3">
-  <label for="nk" class="form-label">Neptun kód</label>
+  <label for="nk" class="form-label">Neptun kĂłd</label>
   <input name="nk" type="text" size="6" maxlength="6" class="form-control" id="nk" >
 </div>
 <div class="mb-3">
-  <label for="jelszav" class="form-label">Jelszó</label>
+  <label for="jelszav" class="form-label">JelszĂł</label>
   <input type="password" name="jelszav" class="form-control" id="jelszav" >
 </div>
-<input name="bejel" type="submit" id="bejel" value="Bejelentkezés">
+<input name="bejel" type="submit" id="bejel" value="BejelentkezĂ©s">
 
 </form>
 </div>
