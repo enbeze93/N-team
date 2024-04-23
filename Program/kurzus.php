@@ -43,8 +43,15 @@ if (isset($_GET["id"])) {
 	if (isset($row[0])) {
 		?>
 		<div class="container-fluid">
-		<h3>A kurzus hallgatói és idõpontjai:</h3>
-		
+		<div class="row">
+			<div class="col">
+				<h3>A kurzus hallgatói és időpontjai:</h3>
+			</div>
+			<div class="col text-end">
+				<h3><a href="adat.php">Vissza a kurzusokhoz</a></h3>
+			</div>
+		</div>
+	
 	<nav aria-label="idopont">
 	<ul class="pagination justify-content-center">
   		<?php
@@ -64,7 +71,6 @@ if (isset($_GET["id"])) {
 	</ul>
 	</nav>
 
-		<button>Vissza</button>
 	<form action="kurzus.php" method="post" name="jelen" id="jelen" hidden>
 		<input type="text" id="f_k" name="f_k" value="<?php echo $_GET["id"]?>">
 		<input type="text" id="f_h" name="f_h">
