@@ -7,7 +7,7 @@ require_once './vedett/adatok.php';
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-<title>Kurzus jelenlét nyilvántartás</title>
+<title>Kurzus jelenlĂ©t nyilvĂˇntartĂˇs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
@@ -43,7 +43,7 @@ if (isset($_GET["id"])) {
 	if (isset($row[0])) {
 		?>
 		<div class="container-fluid">
-		<h3>A kurzus hallgatói és időpontjai:</h3>
+		<h3>A kurzus hallgatĂłi Ă©s idĂµpontjai:</h3>
 		
 	<nav aria-label="idopont">
 	<ul class="pagination justify-content-center">
@@ -63,6 +63,8 @@ if (isset($_GET["id"])) {
 		?>
 	</ul>
 	</nav>
+
+		<button>Vissza</button>
 	<form action="kurzus.php" method="post" name="jelen" id="jelen" hidden>
 		<input type="text" id="f_k" name="f_k" value="<?php echo $_GET["id"]?>">
 		<input type="text" id="f_h" name="f_h">
@@ -72,9 +74,9 @@ if (isset($_GET["id"])) {
 	</form>	
 		<div class="table-responsive">
 		<table class="table table-bordered table-hover" id="kurzus_adatok" >
-		<tr><th>Hallgató</th><th>
+		<tr><th>HallgatĂł</th><th>
 	<?php
-		echo $fej.'</th><th>Összesítés</th></tr>';
+		echo $fej.'</th><th>Ă–sszesĂ­tĂ©s</th></tr>';
 		$query=DB_hallg.$_GET["id"]." and j.i_id=".$ido.DB_hallg2.$_GET["id"]." order by 1";
 		$stid = oci_parse($c, $query);
 		$r = oci_execute($stid);
@@ -86,12 +88,12 @@ if (isset($_GET["id"])) {
 				if ($row[2]==0) { echo " selected";}
 				echo '>Jelen</option><option';
 				if ($row[2]==1) { echo " selected";}
-				echo '>Hiányzás</option><option';
+				echo '>HiĂˇnyzĂˇs</option><option';
 				if ($row[2]==2) { echo " selected";}
 				echo '>Igazolt</option></select> <input type="number" name="'.$row[1].'" onchange="ment(this);" min="0" max="5" style="width:80px" value="'.$row[3].'"></td>';
-				echo '<td>'.$row[4].' hiányzás';
+				echo '<td>'.$row[4].' hiĂˇnyzĂˇs';
 				if ($row[5]>0) { echo ' ('.$row[5].' igazolt)'; }
-				if ($row[6]>0) { echo ', jegyek átlaga:'.$row[6]; }
+				if ($row[6]>0) { echo ', jegyek Ăˇtlaga:'.$row[6]; }
 				echo '</td></tr>';
 			} while (($row = oci_fetch_row($stid)) != false);
 		}
