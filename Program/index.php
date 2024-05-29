@@ -53,7 +53,7 @@ if (isset($_POST["nk"])) {
   <input type="password" name="jelszav" class="form-control" id="jelszav" >
 </div>
 <input name="bejel" type="submit" id="bejel" value="Bejelentkezés">
-
+//comm
 </form>
 </div>
 
